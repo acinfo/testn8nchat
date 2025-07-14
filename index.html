@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trang Chủ với Cửa Sổ Chat</title>
+  <title>Trang Chủ với Chatbot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -26,12 +26,12 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 350px;
-      height: 500px;
+      width: 360px;
+      height: 520px;
       border: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
       border-radius: 12px;
-      z-index: 1000;
+      z-index: 9999;
     }
   </style>
 </head>
@@ -44,11 +44,7 @@
     <p>Trang này có tích hợp cửa sổ chat từ hệ thống n8n.</p>
   </main>
 
-  <!-- Cửa sổ chat nhúng -->
-  <iframe 
-    class="chat-box" 
-    src="https://n8n-zabxdeuj.ap-southeast-1.clawcloudrun.com/webhook/ff97018d-389e-41bd-bc64-e91f4ae00d94/chat" 
-    allow="camera; microphone"
-  ></iframe>
+  <!-- Nhúng chatbot -->
+  <iframe class="chat-box" src="chatbot.html" allow="microphone; camera"></iframe>
 </body>
 </html>
