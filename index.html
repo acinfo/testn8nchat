@@ -1,50 +1,19 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Trang Chủ với Chatbot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #007bff;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    iframe.chat-box {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 360px;
-      height: 520px;
-      border: none;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-      border-radius: 12px;
-      z-index: 9999;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat Widget Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    createChat({
+      webhookUrl: 'https://n8n-zabxdeuj.ap-southeast-1.clawcloudrun.com/webhook/ff97018d-389e-41bd-bc64-e91f4ae00d94/chat'
+    });
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Chào mừng đến với Trang Chủ</h1>
-  </header>
-
-  <main>
-    <p>Trang này có tích hợp cửa sổ chat từ hệ thống n8n.</p>
-  </main>
-
-  <!-- Nhúng chatbot -->
-  <iframe class="chat-box" src="chatbot.html" allow="microphone; camera"></iframe>
+  <h1>Welcome to Demo Site</h1>
+  <p>This is a simple demo page for testing the chat widget.</p>
 </body>
 </html>
